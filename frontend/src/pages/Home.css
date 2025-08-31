@@ -1,0 +1,271 @@
+/* ---------------- Home Container ---------------- */
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+ 
+  background: linear-gradient(135deg, #e0f7e9, #c2f0d9); /* soft green gradient */
+}
+
+/* ---------------- Hero Section ---------------- */
+.hero-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.95);  
+  padding: 50px 35px;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.18);
+  backdrop-filter: blur(6px);
+}
+
+ 
+.hero-heading {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #32CD32, #1e3a8a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.hero-subheading {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #374785; 
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ---------------- CTA Button ---------------- */
+.cta-button {
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #32CD32, #1e3a8a);  
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  background: linear-gradient(90deg, #1e3a8a, #32CD32);
+}
+
+/* ---------------- Footer ---------------- */
+.footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.95rem;
+  color: #333;
+  background: linear-gradient(135deg, #d4f0e3, #b0e2cc);  
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  font-weight: 500;
+}
+
+/* ---------------- Auth Modal ---------------- */
+.auth-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.auth-box {
+  background: linear-gradient(135deg, #1e3a8a, #32CD32); 
+  padding: 45px 35px;
+  border-radius: 20px;
+  width: 380px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+  color: white;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.auth-buttons button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-buttons button:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  border: none;
+  background: transparent;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #ddd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .hero-heading {
+    font-size: 2rem;
+  }
+  .hero-subheading {
+    font-size: 1.3rem;
+  }
+  .hero-description {
+    font-size: 1rem;
+  }
+  .auth-box {
+    width: 90%;
+    padding: 25px;
+  }
+  .auth-buttons {
+    flex-direction: column;
+  }
+}
+/* Home container background */
+.home-container {
+  background: linear-gradient(135deg, #f0f4ff, #d9e4ff);  
+}
+
+/* Hero heading gradient */
+.hero-heading {
+  background: linear-gradient(90deg, #1e3a8a, #4f92ff);  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* CTA button gradient */
+.cta-button {
+  background: linear-gradient(90deg, #1e3a8a, #4f92ff); 
+}
+
+/* CTA button hover gradient */
+.cta-button:hover {
+  background: linear-gradient(90deg, #4f92ff, #1e3a8a);  
+}
+
+/* Auth box gradient */
+.auth-box {
+  background: linear-gradient(135deg, #1e3a8a, #4f92ff);  
+}
+
+/* Footer gradient */
+.footer {
+  background: linear-gradient(135deg, #d9e4ff, #b0c8ff);  
+}
+ 
+.home-container {
+  position: relative;  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+ 
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: 
+    radial-gradient(circle at 30% 30%, rgba(255,255,255,0.2), transparent 70%),
+    linear-gradient(135deg, #1e3a8a, #4f92ff);
+  background-blend-mode: overlay;
+}
+
+ 
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+  background: rgba(255,255,255,0.15);  
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);  
+}
+ 
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.home-container {
+  background: linear-gradient(270deg, #1e3a8a, #4f92ff, #1e3a8a, #4f92ff);
+  background-size: 800% 800%;
+  animation: gradientShift 15s ease infinite;
+}
+
+/* Animated gradient background */
+.home-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #1e3a8a, #4f92ff, #1e3a8a, #4f92ff);
+  background-size: 800% 800%;
+  animation: gradientShift 15s ease infinite;
+  z-index: -1;  
+  filter: blur(30px);  
+}
+ 
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 800px;
+  background: rgba(255,255,255,0.85);  
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+  backdrop-filter: blur(5px);
+}
+
